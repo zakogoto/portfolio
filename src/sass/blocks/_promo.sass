@@ -1,0 +1,28 @@
+.promo
+    min-height: 100vh
+    position: relative
+    background: url('../img/bg/Background.jpg') no-repeat 50%/cover
+    padding-top: 205px
+    &__title
+        width: 530px
+        margin-top: 10px
+    &__subtitle
+        position: relative
+        z-index: 1
+        padding-left: 10px
+        @include before-circle
+    &__btns
+        margin-top: 25px
+        display: flex
+        width: 250px
+        justify-content: space-between
+        align-items: center
+    &__link
+        color: #000
+        font-weight: 700
+        font-size: 14px
+        line-height: 21px
+        &:hover
+            color: #000
+            text-decoration: none
+        // background: $main-color
