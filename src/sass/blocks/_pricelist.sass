@@ -1,0 +1,35 @@
+.pricelist
+    padding-top: 120px
+    &__wrap
+        padding: 60px 50px 0 50px
+        display: grid
+        grid-template-columns: repeat(2, 370px)
+        justify-content: space-between
+    &__column
+        ul
+            list-style-type: none
+            margin: 0
+    &__item
+        padding-left: 25px
+        margin-bottom: 15px
+        display: grid
+        grid-template: repeat(2, minmax(21px auto)) / 2 auto
+        row-gap: 5px
+        justify-content: space-between
+        align-content: space-between
+    &__descr
+        position: relative
+        &::before
+            content: ""
+            position: absolute
+            width: 15px
+            height: 15px
+            background: $main-color
+            border-radius: 100%
+            left: -25px
+            top: 4px
+    &__price
+        justify-self: end
+    &__text
+        grid-row: 2
+        grid-column: 1 / 3

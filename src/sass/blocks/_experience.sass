@@ -1,0 +1,72 @@
+.experience
+    padding-top: 120px
+    &__wrap
+        display: grid
+        padding: 60px 65px 0 65px
+        grid-template-columns: repeat(2, 425px)
+        justify-content: space-between
+    &__column
+        &-title
+            position: relative
+            padding-left: 35px
+            line-height: 30px
+            margin: 0
+            &::before
+                content: ""
+                position: absolute
+                width: 15px
+                height: 15px
+                background: $main-color
+                border-radius: 100%
+                top: 50%
+                transform: translateY(-50%)
+                left: -7px
+        ul
+            list-style-type: none
+            li
+                position: relative
+                &::after
+                    content: ""
+                    position: absolute
+                    width: 1px
+                    height: calc(100% + 10px)
+                    background-color: #000
+                    top: -9px
+                &:last-child
+                    &::after
+                        height: calc(100% + 9px)  
+                    &::before
+                        content: ""
+                        position: absolute
+                        width: 15px
+                        height: 15px
+                        background: $main-color
+                        border-radius: 100%
+                        bottom: -22px
+                        transform: translateY(-50%)
+                        left: -7px
+                    
+    &__item
+        position: relative
+        &:before
+            content: ""
+            position: absolute
+            height: 1px
+            width: 45px
+            background-color: #000
+            top: 65px
+        &-head
+            position: relative
+            padding: 45px 0 0 100px
+        &-icon
+            position: absolute
+            left: 61px
+            top: 62px
+            @include before-circle
+            &::before
+                left: -17px
+                top: -14px
+        &-title
+            margin: 0
+        &-body
+            padding: 12px 0 0 43px

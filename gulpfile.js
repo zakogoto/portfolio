@@ -51,7 +51,7 @@ gulp.task('scripts', function() {
 });
 
 gulp.task('icons', function() {
-    return gulp.src("src/img/**/*")
+    return gulp.src("src/icons/**/*")
         .pipe(gulp.dest('dist/icons'))
         .pipe(browserSync.stream());
 });

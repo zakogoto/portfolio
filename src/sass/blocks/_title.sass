@@ -1,6 +1,10 @@
 .title
     font-weight: 700
     line-height: 60px
+    &_fz12
+        font-weight: 500
+        font-size: 12px
+        line-height: 18px
     &_fz14
         font-size: 14px
         line-height: 21px
@@ -9,8 +13,24 @@
         font-size: 16px
         line-height: 24px
         color: #000000
+    &_fz20
+        font-size: 20px
+        line-height: 30px
+        color: #000000
     &_fz36
         font-size: 36px
     &_fz48
         font-size: 48px
         color: #000000
+    &__section-title
+        padding-top: 6px
+        text-align: center
+        position: relative
+        @include before-circle
+        &::before
+            left: 50%
+            transform: translateX(-50%)
+            top: 0
+    &__section-subtitle
+        text-align: center
+    
