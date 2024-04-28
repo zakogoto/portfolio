@@ -6,7 +6,7 @@ const hamburger = document.querySelector('.hamburger'),
 
 hamburger.addEventListener('click', () => {
 	hamburger.style.display = 'none';
-	document.body.style.overflow = 'hidden';
+	document.body.style.overflowY = 'hidden';
 	menu.classList.add("active");
 });
 
@@ -14,7 +14,7 @@ hamburger.addEventListener('click', () => {
 function hideMenu (component) {
 	component.addEventListener('click', () => {
 		menu.classList.remove("active");
-		document.body.style.overflow = 'scroll';
+		document.body.style.overflowY = 'scroll';
 		hamburger.style.display = 'flex';
 	})
 }
@@ -25,7 +25,7 @@ hideMenu(overlay);
 menuItems.forEach(item => {
 	item.addEventListener('click', () => {
 		menu.classList.remove("active");
-		document.body.style.overflow = 'scroll';
+		document.body.style.overflowY = 'scroll';
 	});
 });
 
