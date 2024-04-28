@@ -25,6 +25,7 @@ hideMenu(overlay);
 menuItems.forEach(item => {
 	item.addEventListener('click', () => {
 		menu.classList.remove("active");
+		document.body.style.overflow = 'scroll';
 	});
 });
 
