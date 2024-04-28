@@ -1,15 +1,26 @@
 const hamburger = document.querySelector('.hamburger'),
 	menu = document.querySelector('.menu'),
 	closeMenu = document.querySelector('.menu__close'),
+	overlay = document.querySelector('.menu__overlay'),
 	menuItems = document.querySelectorAll('.menu__item');
 
 hamburger.addEventListener('click', () => {
+	hamburger.style.display = 'none';
+	document.body.style.overflow = 'hidden';
 	menu.classList.add("active");
 });
 
-closeMenu.addEventListener('click', () => {
-	menu.classList.remove("active");
-});
+
+function hideMenu (component) {
+	component.addEventListener('click', () => {
+		menu.classList.remove("active");
+		document.body.style.overflow = 'scroll';
+		hamburger.style.display = 'flex';
+	})
+}
+
+hideMenu(closeMenu);
+hideMenu(overlay);
 
 menuItems.forEach(item => {
 	item.addEventListener('click', () => {
