@@ -1,9 +1,11 @@
 .contacts
-    padding-top: 120px
-    padding-bottom: 90px
+    min-height: 100vh
+    padding-top: 160px
+    // padding-bottom: 90px
+    background: #fff
     &__wrap
         display: grid
-        padding: 0  35px 0 50px
+        padding: 50px  35px 0 50px
         grid-template-columns: 400px 570px
         column-gap: 70px
     &__title
@@ -12,8 +14,6 @@
         padding-left: 15px
         margin-top: 6px
         @include before-circle
-    .divider
-        margin: 0
     &__photo
         img
             width: 100%

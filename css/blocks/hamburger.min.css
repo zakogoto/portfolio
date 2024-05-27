@@ -1,1 +1,0 @@
-.hamburger{position:absolute;display:flex;flex-direction:column;justify-content:space-between;align-items:flex-end;top:20px;right:30px;width:35px;height:22px;transition:1s all}.hamburger span{width:30px;height:3px;background:#000}.hamburger span.long{width:35px}.hamburger:hover span{width:35px}.hamburger:hover span.long{width:30px}

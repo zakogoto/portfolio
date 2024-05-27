@@ -3,6 +3,9 @@
         max-width: 960px
     .side-panel
         display: none
+    .title
+        &_fz36
+            margin-top: 40px
     .about
         &__wrap
             grid-template-columns: 400px 520px
@@ -15,7 +18,7 @@
             grid-template-columns: 40px 195px
             column-gap: 15px
     .skills
-        &__wrap
+        &__items
             justify-content: center
         &__progress
             column-gap: 30px
@@ -61,7 +64,7 @@
             justify-content: space-between
     .skills
         padding-top: 60px
-        &__wrap
+        &__items
             justify-content: center
         &__progress
             padding-top: 60px
@@ -132,6 +135,7 @@
             grid-row: 3
             grid-column: 1
             grid-template: repeat(2, minmax(115px, auto)) / repeat(2, 260px)
+            margin-top: 40px
         &__skill
             grid-template-columns: 40px 200px
             column-gap: 20px
@@ -142,8 +146,9 @@
             grid-template-rows: repeat(2, auto)
             row-gap: 40px
     .skills
-        &__wrap
+        &__items
             justify-content: center
+            grid-template-columns: repeat(2, 270px)
         &__progress
             grid-template-columns: repeat(2, 254px)
             justify-content: center
@@ -179,6 +184,12 @@
             grid-template-rows: 45px 187px 45px
             column-gap: 20px
             row-gap: 15px
+        &__links
+            display: flex
+            justify-content: center
+            align-items: center
+        &__text
+            text-align: center
         &__triggers
             grid-template-columns: repeat(2, auto)
             column-gap: 20px
@@ -215,8 +226,9 @@
         padding-top: 40px
     .skills
         padding-top: 40px
-        &__wrap
+        &__items
             padding-top: 40px
+            grid-template-columns: repeat(auto-fit, 270px)
         &__progress
             padding-top: 40px
             grid-template-columns: 300px
