@@ -17,7 +17,8 @@ document.addEventListener("DOMContentLoaded", (event) => {
 			// markers: true,
 			start: 'center',
 			end: '150%',
-			scrub: true,}
+			scrub: true,
+		}
 		})
 		ScrollTrigger.create({
 			ease: true,
@@ -28,7 +29,7 @@ document.addEventListener("DOMContentLoaded", (event) => {
 			pin: true,
 			// end: '+=100px',
 			scrub: true,
-			snap: 0.01,
+			// snap: 0.01,
 			pinSpacing: false
 		})
 	})
@@ -42,7 +43,7 @@ document.addEventListener("DOMContentLoaded", (event) => {
 				start: '0',
 				// end: '300',
 				scrub: true,
-				snap: 0.1
+				// snap: 0.1
 			}
 		})
 	})
