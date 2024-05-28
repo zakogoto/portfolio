@@ -34,32 +34,32 @@ document.addEventListener("DOMContentLoaded", (event) => {
 		})
 	})
 
-	subtitleItems.forEach(item => {
-		gsap.fromTo(item, {opacity: 0,  x: -100}, {
-			opacity: 1, x: 0,
-			scrollTrigger: {
-				trigger: item,
-				// markers: true,
-				start: '0',
-				// end: '300',
-				scrub: true,
-				// snap: 0.1
-			}
-		})
-	})
-	titleItems.forEach(item => {
-		gsap.fromTo(item, {opacity: 0,  x: 300}, {
-			opacity: 1, x: 0,
-			scrollTrigger: {
-				trigger: item,
-				// markers: true,
-				start: '0',
-				// end: '30%',
-				scrub: true,
-				snap: 0.1
-			}
-		})
-	})
+	// subtitleItems.forEach(item => {
+	// 	gsap.fromTo(item, {opacity: 0,  x: -100}, {
+	// 		opacity: 1, x: 0,
+	// 		scrollTrigger: {
+	// 			trigger: item,
+	// 			// markers: true,
+	// 			start: '0',
+	// 			// end: '300',
+	// 			scrub: true,
+	// 			// snap: 0.1
+	// 		}
+	// 	})
+	// })
+	// titleItems.forEach(item => {
+	// 	gsap.fromTo(item, {opacity: 0,  x: 300}, {
+	// 		opacity: 1, x: 0,
+	// 		scrollTrigger: {
+	// 			trigger: item,
+	// 			// markers: true,
+	// 			start: '0',
+	// 			// end: '30%',
+	// 			scrub: true,
+	// 			// snap: 0.1
+	// 		}
+	// 	})
+	// })
    });
 
 const menuActions = () => {
